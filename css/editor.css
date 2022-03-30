@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fontlibrary.org//face/fantasque-sans-mono');
 
-.cm-scroller {
-  font-family: 'JetBrains Mono', monospace !important;
-}
 .ͼ1.cm-editor {
   border-radius: .4rem;
 }
