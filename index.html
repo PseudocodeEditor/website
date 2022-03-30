@@ -5,10 +5,22 @@
     <meta name="viewport" content="width=device-width">
     <title>PseudoCode Editor</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="editor.css" rel="stylesheet" type="text/css" />
+    <link href="buttons.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <div id="buttons">
+      <input type="file" id="upload" accept=".psc">
+      <label for="upload" id="upload-label"><span>Load File</span></label>
+      
+      <button id="download-button"><span>Save File</span></button>
+    </div>
+
+    
     <div id="editor"></div>
-    <script src="https://cm.codingcactus.repl.co">
-    </script>
+
+    <div id="content-target"></div>
+    
+    <script src="https://cm.codingcactus.repl.co"></script>
   </body>
 </html>
