@@ -1,24 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
-@import url('https://fontlibrary.org//face/fantasque-sans-mono');
+
+.editor {
+  background-color: var(--editor-bg);
+}
 
 .ͼ1.cm-editor {
-  border-radius: .4rem;
-}
-.ͼ1.cm-editor.cm-focused {
-  outline: none !important;
-}
-.ͼ1 .cm-gutter {
-  min-width: 3ch !important;
-}
-.ͼp .cm-scroller {
-  padding: .4rem;
+  padding-top: 0.4rem;
 }
 
-/*
-.ͼ1 .cm-foldGutter span {
-  transition: color 0.25s ease 0s;
+.cm-gutter {
+  min-width: 3ch;
 }
-.ͼ1 .cm-foldGutter span:hover {
-  color: white;
+
+.ͼp .cm-gutters {
+  padding-left: 0.8rem;
+  margin-bottom: 35vh;
 }
-*/
+
+.ͼp .cm-scroller {
+  line-height: 1.9;
+  font-size: 13px;
+}
+
+.ͼ1.cm-editor.cm-focused {
+  outline: none;
+}
+
+.ͼp .cm-activeLine {
+  background-color: transparent !important;
+}
+
+.ͼp .cm-activeLineGutter {
+  background-color: transparent !important;
+}
+
+.data-grammarly-part {
+  display: none;
+}
