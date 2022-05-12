@@ -20,6 +20,12 @@
 </head>
 
 <body class="dark">
+  <script>
+    window.onbeforeunload = () => {
+      return "File changes won't be saved unless downloaded.";
+    };
+  </script>
+  
   <div id="popup-overlay" class="welcome-overlay wf-section">
     <div class="welcome-inner">
       <div class="welcome">
@@ -61,7 +67,7 @@
     <div class="theme-select-inner">
       <div class="theme-select">
         <div class="theme-title-block">
-          <h4></h4>
+          <h4 style="width: 35.28px;"></h4>
           <h4 class="theme-title">Appearance</h4>
           <h4 class="theme-done">Done</h4>
         </div>
@@ -218,22 +224,14 @@
           </a>
           
         </div>
-      </div>
+      </div>      
       
-      <div class="tabs w-tabs">
-        <div class="tabs-content w-tab-content">
-          <div class="tab-pane w-tab-pane w--tab-active">
-            <div class="editor-wrapper">
-              <div id="editor" class="editor"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div id="editor" class="editor"></div>      
     </div>
     
     <div class="console-panel">
       <div class="console-header">
-        <div></div>
+        <div style="width: 29.41px"></div>
         <div class="console-heading">Console</div>
         <div id="collapse-console" class="console-heading icon">􀏛</div>
       </div>
